@@ -74,16 +74,16 @@
 //Implementa una función llamada concat tal que admita múltiples argumentos de tipo string y devuelva otro string con la
 //concatenación de todos, separados por | .
 
-// const concat = (...myStrings) => {
-//     let stringsList = "";
-//     for(let str of myStrings){
-//     stringsList +=  str + " " + "|" + " ";
+//  const concat = (...myStrings) => myStrings.join("!")
+// //     let stringsList = "";
+// //     for(let str of myStrings){
+// //     stringsList +=  str + " " + "|" + " ";
    
-// } 
-// console.log(stringsList)
-// };
+  
+//  //console.log(concat);
+// // };
 
-// concat("lunes", "martes", "miercoles");
+// console.log(concat("lunes", "martes", "miercoles"));
 
 
 
@@ -131,9 +131,9 @@
 
 
 //NO ESTA HECHO
-// const longest = (caracter, ...strings) => strings.every(caracter => caracter === strings[0] ? 1 : 0 );
+const longest = (caracter, ...strings) => strings.every(caracter => caracter === strings[0]);
 
-//     console.log(longest("a", "alfabeto", "anombre", "acasa"))
+    console.log(longest("a", "alfabeto", "anombre", "acasa"))
 
 
  
@@ -230,3 +230,4 @@
 // .map(item => item.product + "->" + " " + (item.price * item.units) + " Euros");
 
 // console.log(sortedShoppingCart(shoppingCart));
+
